@@ -13,4 +13,4 @@ const OrderItem = () => {
   )
 }
 
-export default OrderItem
+export default OrderItem;
