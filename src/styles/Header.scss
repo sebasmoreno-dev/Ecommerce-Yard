@@ -1,4 +1,5 @@
-@use './_vars.scss';
+@use 'vars';
+@import 'Breakpoinst';
 
 .header {
   display: flex;
@@ -7,7 +8,14 @@
   border-bottom: 1px solid vars.$very-light-pink;
   &__menu {
     display: none;
+    /* @media (max-width: 640px) {
+      display: block;
+    } */
+    @include responsive (mobile) {
+      display: block;
+    }
   }
+
   &__left {
     width: 100px;
     display: flex;
@@ -16,6 +24,14 @@
     }
     ul {
       margin-left: 12px;
+      li {
+        @media (max-width: 640px) {
+          display: none;
+        }
+      }
+      /* @include media(mobile-only) {
+        display: none;
+      } */
     }
   }
   &__left ul,
@@ -42,6 +58,12 @@
       color: var(--very-light-pink);
       font-size: var(--sm);
       margin-right: 12px;
+      @media (max-width: 768px) {
+        display: none;
+      }
+      /* @include media(mobile-only) {
+        display: none;
+      } */
     }
     &--cart {
       position: relative;
@@ -63,7 +85,7 @@
   }
 }
 
-@media (max-width: 640px) {
+/* @media (max-width: 640px) {
   .menu {
     display: block;
   }
@@ -73,5 +95,5 @@
   .header-email {
     display: none;
   }
-}
+} */
 
