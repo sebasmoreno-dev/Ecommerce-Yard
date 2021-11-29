@@ -1,16 +1,16 @@
 import React from 'react'
-import '../styles/Header.scss';
-import iconMenu from '../assets/icons/icon_menu.svg';
-import logo from '../assets/logos/logo_yard_sale.svg';
-import shopingIcon from '../assets/icons/icon_shopping_cart_notification.svg';
+import '@styles/Header.scss';
+import menu from '@icons/icon_menu.svg';
+import logo from '@logos/logo_yard_sale.svg';
+import shopingIcon from '@icons/icon_shopping_cart_notification.svg';
 
 const Header = () => {
   return (
-    <nav>
-      <img src={iconMenu} alt="menu" className="menu" />
+    <nav className="header">
+      <img src={menu} alt="menu" className="header__menu" />
 
-      <div className="navbar-left">
-        <img src={logo} alt="logo" className="logo-header" />
+      <div className="header__left">
+        <img src={logo} alt="logo" className="header__left--logo" />
 
         <ul>
           <li>
@@ -34,10 +34,10 @@ const Header = () => {
         </ul>
       </div>
 
-      <div className="navbar-right">
+      <div className="header__right">
         <ul>
-          <li className="navbar-email">platzi@example.com</li>
-          <li className="navbar-shopping-cart">
+          <li className="header__right--email">platzi@example.com</li>
+          <li className="header__right--cart">
             <img src={shopingIcon} alt="shopping cart" />
             <div>2</div>
           </li>

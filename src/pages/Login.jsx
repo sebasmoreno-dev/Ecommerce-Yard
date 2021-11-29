@@ -1,6 +1,6 @@
 //rafce
 import React from 'react'
-import LoginInformation from '../components/LoginInformation.jsx';
+import LoginInformation from '@components/LoginInformation.jsx';
 
 const Login = () => {
   return (

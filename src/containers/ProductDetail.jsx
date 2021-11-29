@@ -1,11 +1,17 @@
 import React from 'react'
+import close from '@icons/icon_close.png'
+import ProductInfo from '@components/ProductInfo';
+import '@styles/ProductDetail.scss';
 
 const ProductDetail = () => {
   return (
-    <div>
-      
-    </div>
+    <aside className="ProductDetail">
+			<div className="ProductDetail-close">
+				<img src={close} alt="close" />
+			</div>
+			<ProductInfo />
+		</aside>
   )
 }
 
-export default ProductDetail
+export default ProductDetail;
