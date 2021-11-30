@@ -1,32 +1,36 @@
+@use 'vars' as v;
+@use 'Mixins' as m;
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500);
-@import 'vars';
 
-.button-404 {
-  font-weight: 300;
-  background-color:var(--hospital-green);
-  color: var(--white);
-  font-size: 1.2em;
-  text-decoration: none;
-  border: 1px solid #efefef;
-  padding: .5em;
-  border-radius: 3px;
-  float: left;
-  margin: 0 0 0 -168px;
-  left: 50%;
-  position: relative;
-  transition: all .3s linear;
+
+
+.NotFound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    text-align: center;
+    font-size: 10em;
+    font-weight: 100;
+  }
+  &__text {
+    font-size: 2em;
+    text-align: center;
+    font-weight: 100;
+  }
+  &__button {
+    @include m.primary-button;
+    font-size: v.$title-md;
+    width: 350px;
+    height: auto;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+  }
 }
 
-.text-404 {
-  font-size: 2em;
-  text-align: center;
-  font-weight: 100;
-}
 
-.title-404 {
-  margin-top: 0.2em;
-  margin-bottom: 0.2em;
-  text-align: center;
-  font-size: 10em;
-  font-weight: 100;
-}
+
+

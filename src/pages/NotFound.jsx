@@ -3,10 +3,10 @@ import '@styles/NotFound.scss';
 
 const NotFound = () => {
   return (
-    <div>
-      <h1 className="title-404">404</h1>
-      <p className="text-404">Oops! Pagina no encontrada</p>
-      <a className="button-404" href="/">Regrese a la página inicial 😉</a>
+    <div className="NotFound">
+      <h1 className="NotFound__title">404</h1>
+      <p className="NotFound__text">Oops! Pagina no encontrada</p>
+      <a className="NotFound__button" href="/">Regrese a la página inicial 😉</a>
     </div>
   )
 }

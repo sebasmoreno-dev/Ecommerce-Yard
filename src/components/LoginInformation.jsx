@@ -4,16 +4,19 @@ import logo from '@logos/logo_yard_sale.svg';
 
 const LoginInformation = () => {
   return (
-    <div className="form-container">
-      <img src={logo} alt="logo" className="logo-login" />
-        <h1 className="title">Create a new password</h1>
-        <p className="subtitle">Enter a new password for you account</p>
-      <form action="/" className="form">
-        <label htmlFor="password" className="label">Password</label>
-        <input type="password" id="password" placeholder="*********" className="input input-password" />
-        <label htmlFor="new-password" className="label">Password</label>
-        <input type="password" id="new-password" placeholder="*********" className="input input-password" />
-        <input type="submit" value="Confirm" className="primary-button login-button" />
+    <div className="container">
+      <img src={logo} alt="logo" className="container__logo" />
+      <form action="/" className="container__form">
+
+        <label htmlFor="email" className="container__form--label">Email addres</label>
+        <input type="text" id="email" placeholder="platzi@example.com" className="container__form--email" />
+
+        <label htmlFor="password" className="container__form--label">Password</label>
+        <input type="password" id="password" placeholder="*********" className="container__form--password" />
+
+        <input type="submit" value="Log in" className="container__form--login" />
+        <a href="/">Forgot my password</a>
+        <button className="container__form--singUp">Sing up</button>
       </form>
     </div>
   )

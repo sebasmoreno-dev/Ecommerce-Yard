@@ -1,17 +1,14 @@
-@use 'vars';
-@import 'Breakpoinst';
+@use 'vars' as v;
+@use 'Mixins' as m;
 
 .header {
   display: flex;
   justify-content: space-between;
   padding: 0 24px;
-  border-bottom: 1px solid vars.$very-light-pink;
+  border-bottom: 1px solid v.$very-light-pink;
   &__menu {
     display: none;
-    /* @media (max-width: 640px) {
-      display: block;
-    } */
-    @include responsive (mobile) {
+    @include m.responsive (mobile) {
       display: block;
     }
   }
@@ -25,13 +22,10 @@
     ul {
       margin-left: 12px;
       li {
-        @media (max-width: 640px) {
+        @include m.responsive (mobile) {
           display: none;
         }
       }
-      /* @include media(mobile-only) {
-        display: none;
-      } */
     }
   }
   &__left ul,
@@ -43,36 +37,33 @@
     height: 60px;
     li a {
       text-decoration: none;
-      color: vars.$very-light-pink;
-      border: 1px solid vars.$white;
+      color: v.$very-light-pink;
+      border: 1px solid v.$white;
       padding: 8px;
       border-radius: 8px;
     }
     a:hover {
-      border: 1px solid vars.$hospital-green;
-      color: vars.$hospital-green;
+      border: 1px solid v.$hospital-green;
+      color: v.$hospital-green;
     }
   }
   &__right {
     &--email {
-      color: var(--very-light-pink);
-      font-size: var(--sm);
+      color: v.$very-light-pink;
+      font-size: v.$sm;
       margin-right: 12px;
-      @media (max-width: 768px) {
+      @include m.responsive(mobile) {
         display: none;
       }
-      /* @include media(mobile-only) {
-        display: none;
-      } */
     }
     &--cart {
       position: relative;
       div {
         width: 16px;
         height: 16px;
-        background-color: var(--hospital-green);
+        background-color: v.$hospital-green;
         border-radius: 50%;
-        font-size: var(--sm);
+        font-size: v.$sm;
         font-weight: bold;
         position: absolute;
         top: -6px;
@@ -85,15 +76,4 @@
   }
 }
 
-/* @media (max-width: 640px) {
-  .menu {
-    display: block;
-  }
-  .header-left ul {
-    display: none;
-  }
-  .header-email {
-    display: none;
-  }
-} */
 

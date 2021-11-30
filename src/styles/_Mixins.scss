@@ -1,0 +1,96 @@
+@use 'vars' as v;
+
+@mixin primary-button {
+    background-color: v.$hospital-green;
+    border-radius: 8px;
+    border: none;
+    color: v.$white;
+    width: 100%;
+    cursor: pointer;
+    font-size: v.$md;
+    font-weight: bold;
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+@mixin secondary-button {
+    background-color: v.$white;
+    border-radius: 8px;
+    border: 1px solid v.$hospital-green;
+    color: v.$hospital-green;
+    width: 100%;
+    cursor: pointer;
+    font-size: v.$sm;
+    font-weight: bold;
+    height: 50px;
+}
+
+@mixin secondary-title {
+    font-size: v.$lg;
+    margin-bottom: 36px;
+    text-align: start;
+}
+
+@mixin label-title {
+    font-size: v.$sm;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+@mixin text-input {
+    background-color: v.$text-input-field;
+    border: none;
+    border-radius: 8px;
+    height: 30px;
+    font-size: v.$md;
+    padding: 6px;
+    margin-bottom: 24px;
+}
+
+@mixin responsive ($breakpoint) {
+
+    @if $breakpoint == tablet {
+        @media only screen and (min-width: 768px) { @content; }
+    }
+
+    @else if $breakpoint == desktop-s {
+        @media only screen and (min-width: 992px) { @content; }
+    }
+
+    @else if $breakpoint == desktop-m {
+        @media only screen and (min-width: 1200px) { @content; }
+    }
+
+    @else if $breakpoint == desktop-l {
+        @media only screen and (min-width: 1480px) { @content; }
+    }
+
+    @else if $breakpoint == desktop-xl {
+        @media only screen and (min-width: 1780px) { @content; }
+    }
+
+    @else if $breakpoint == mobile-only {
+        @media only screen and (max-width: 768px) { @content; }
+    }
+
+    @else if $breakpoint == mobile {
+    @media only screen and (max-width: 640px) { @content; }
+    }
+
+    @else if $breakpoint == tablet-p-only {
+        @media only screen and (min-width: 768px) and (max-width: 992px) and (orientation : portrait) { @content; }
+    }
+
+    @else if $breakpoint == tablet-l-only {
+        @media only screen and (min-width: 768px) and (max-width: 992px) and (orientation : landscape) { @content; }
+    }
+
+    @else if $breakpoint == desktop-s-only {
+        @media only screen and (min-width: 768px) and (max-width: 1200px) { @content; }
+    }
+
+    @else if $breakpoint == desktop-m-only {
+        @media only screen and (min-width: 1200px) and (max-width: 1480px) { @content; }
+    }
+}
+

@@ -1,4 +1,4 @@
-@use 'vars';
+@use 'vars' as v;
 
 .Checkout {
 	width: 100%;
@@ -10,7 +10,7 @@
 		grid-template-rows: auto 1fr auto;
 		width: 300px;
 		&--title {
-			font-size: vars.$title-md;
+			font-size: v.$title-md;
 			margin-bottom: 40px;
 		}
 	}
@@ -22,7 +22,7 @@
 			grid-template-columns: auto 1fr;
 			gap: 16px;
 			align-items: center;
-			background-color: vars.$text-input-field;
+			background-color: v.$text-input-field;
 			margin-bottom: 24px;
 			border-radius: 8px;
 			padding: 0 24px;
@@ -31,12 +31,12 @@
 				flex-direction: column;
 			}
 			p span:nth-child(1) {
-				font-size: vars.$md;
+				font-size: v.$md;
 				font-weight: bold;
 			}
 			p span:nth-child(2) {
-				font-size: vars.$sm;
-				color: vars.$very-light-pink;
+				font-size: v.$sm;
+				color: v.$very-light-pink;
 			}
 			p:nth-child(2) {
 				text-align: end;

@@ -5,19 +5,19 @@ import '@styles/MyOrder.scss';
 const MyOrder = () => {
   return (
     <aside className="MyOrder">
-			<div className="title-container">
+			<div className="MyOrder__content">
 				<img src="@icons/flechita.svg" alt="arrow" />
-				<p className="title">My order</p>
+				<p className="MyOrder__content--title">My order</p>
 			</div>
-			<div className="my-order-content">
+			<div className="MyOrder__container">
 				<OrderItem />
-				<div className="order">
+				<div className="MyOrder__container--order">
 					<p>
 						<span>Total</span>
 					</p>
 					<p>$560.00</p>
 				</div>
-				<button className="primary-button">
+				<button className="MyOrder__container--button">
 					Checkout
 				</button>
 			</div>
