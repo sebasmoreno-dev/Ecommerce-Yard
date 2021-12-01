@@ -6,11 +6,11 @@ const ProductInfo = () => {
   return (
     <>
 			<img src="https://acortar.link/GPff2T" alt="bike" />
-			<div className="product-info">
+			<div className="product__info">
 				<p>$35,00</p>
 				<p>Bike</p>
 				<p>With its practical position, this bike also fulfills a decorative function, add your hall or workspace.</p>
-				<button className="primary-button add-to-cart-button">
+				<button className="product__info--button">
 					<img src={iconAdd} alt="add to cart" />
 					Add to cart
 				</button>
@@ -19,4 +19,4 @@ const ProductInfo = () => {
   );
 }
 
-export default ProductInfo
+export default ProductInfo;

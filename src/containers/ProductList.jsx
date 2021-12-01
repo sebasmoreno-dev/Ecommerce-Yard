@@ -4,7 +4,7 @@ import ProductItem from '@components/ProductItem.jsx';
 const ProductList = () => {
   return (
     <section className="main-container">
-      <div className="product-list">
+      <div className="product__list">
         <ProductItem />
       </div>
     </section>

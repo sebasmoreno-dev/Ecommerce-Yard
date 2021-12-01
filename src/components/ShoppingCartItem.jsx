@@ -3,7 +3,7 @@ import '@styles/ShoppingCartItem.scss';
 
 const ShoppingCartItem = () => {
   return (
-    <div class="shopping-cart-item">
+    <div class="shopping__card">
         <figure>
           <img src="https://acortar.link/GPff2T" alt="bike" />
         </figure>
@@ -13,4 +13,4 @@ const ShoppingCartItem = () => {
   )
 }
 
-export default ShoppingCartItem
+export default ShoppingCartItem;

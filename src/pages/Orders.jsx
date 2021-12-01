@@ -5,9 +5,9 @@ import '@styles/Orders.scss'
 const Orders = () => {
   return (
     <div className="Orders">
-			<div className="Orders-container">
-				<h1 className="title">My orders</h1>
-				<div className="Orders-content">
+			<div className="Orders__container">
+				<h1 className="Orders__title">My orders</h1>
+				<div className="Orders__container--content">
 					<OrderItem />
 				</div>
 			</div>

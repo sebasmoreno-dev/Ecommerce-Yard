@@ -1,14 +1,15 @@
 @use './_vars.scss' as v;
 @use 'Mixins' as m;
 
-.container {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  width: 300px;
+.Login {
+  @include m.generally-container;
+  &__container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+  }
   &__logo {
-    width: 150px;
-    margin-bottom: 48px;
-    justify-self: center;
+    @include m.logo-yard;
   }
   &__form {
     display: flex;

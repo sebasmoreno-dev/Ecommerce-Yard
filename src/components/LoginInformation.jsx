@@ -4,20 +4,22 @@ import logo from '@logos/logo_yard_sale.svg';
 
 const LoginInformation = () => {
   return (
-    <div className="container">
-      <img src={logo} alt="logo" className="container__logo" />
-      <form action="/" className="container__form">
+    <div className="Login">
+      <div className="Login__container">
+        <img src={logo} alt="logo" className="Login__logo" />
+        <form action="/" className="Login__form">
 
-        <label htmlFor="email" className="container__form--label">Email addres</label>
-        <input type="text" id="email" placeholder="platzi@example.com" className="container__form--email" />
+          <label htmlFor="email" className="Login__form--label">Email addres</label>
+          <input type="text" id="email" placeholder="platzi@example.com" className="Login__form--email" />
 
-        <label htmlFor="password" className="container__form--label">Password</label>
-        <input type="password" id="password" placeholder="*********" className="container__form--password" />
+          <label htmlFor="password" className="Login__form--label">Password</label>
+          <input type="password" id="password" placeholder="*********" className="Login__form--password" />
 
-        <input type="submit" value="Log in" className="container__form--login" />
-        <a href="/">Forgot my password</a>
-        <button className="container__form--singUp">Sing up</button>
-      </form>
+          <input type="submit" value="Log in" className="Login__form--login" />
+          <a href="/">Forgot my password</a>
+          <button className="Login__form--singUp">Sing up</button>
+        </form>
+      </div>
     </div>
   )
 }

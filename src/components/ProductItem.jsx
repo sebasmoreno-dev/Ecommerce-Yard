@@ -3,9 +3,9 @@ import iconAdd from '@icons/bt_add_to_cart.svg';
 
 const ProductItem = () => {
   return (
-    <div class="product-item">
+    <div class="product__item">
       <img src="https://acortar.link/GPff2T" alt="" />
-      <div class="product-info" >
+      <div class="product__item--info" >
         <div>
           <p>$120,00</p>
           <p>Bike</p>
@@ -18,4 +18,4 @@ const ProductItem = () => {
   )
 }
 
-export default ProductItem
+export default ProductItem;
