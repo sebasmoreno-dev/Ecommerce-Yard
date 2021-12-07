@@ -1,11 +1,15 @@
-@use './_vars' as v;
+@use 'vars' as v;
 
-.desktop-menu {
+.menu {
   width: 100px;
   height: auto;
-  border: 1px solid v,$very-light-pink;
+  border: 1px solid v.$very-light-pink;
   border-radius: 6px;
   padding: 20px 20px 0 20px;
+  position: absolute;
+  top: 92px;
+  right: 50px;
+  background-color: v.$white;
   ul {
     list-style: none;
     padding: 0;
@@ -26,7 +30,7 @@
       font-size: v.$sm;
     }
     a {
-      color: v.$back;
+      color: v.$black;
       text-decoration: none;
       margin-bottom: 20px;
       display: inline-block;

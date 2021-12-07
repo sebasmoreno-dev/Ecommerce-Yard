@@ -50,11 +50,14 @@
   &__right {
     &--email {
       color: v.$very-light-pink;
-      font-size: v.$sm;
-      margin-right: 12px;
+      font-size: v.$md;
+      margin-right: 14px;
       @include m.responsive(mobile) {
         display: none;
       }
+    }
+    &--email:hover {
+      cursor: pointer;
     }
     &--cart {
       position: relative;
@@ -72,6 +75,9 @@
         justify-content: center;
         align-items: center;
       }
+    }
+    &--cart:hover {
+      cursor: pointer;
     }
   }
 }

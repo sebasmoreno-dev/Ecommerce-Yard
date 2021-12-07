@@ -13,6 +13,9 @@
       @include m.img-item;
     }
   }
+  img:hover {
+    cursor: pointer;
+  }
   p:nth-child(2) {
     color: v.$very-light-pink;
   }

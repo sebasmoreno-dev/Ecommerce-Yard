@@ -16,6 +16,9 @@
       height: 140px;
     }
   }
+  img:hover {
+    cursor: pointer;
+  }
   &--info {
     display: flex;
     justify-content: space-between;

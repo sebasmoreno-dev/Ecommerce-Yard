@@ -7,6 +7,10 @@
 	box-sizing: border-box;
 	position: absolute;
 	right: 0;
+	background-color: v.$white;
+	top: 60px;
+	bottom: auto;
+	border-radius: 6px;
 	@include m.responsive(mobile) {
 		width: 100%;
 	}
